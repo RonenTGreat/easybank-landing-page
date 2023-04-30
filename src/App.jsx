@@ -1,8 +1,12 @@
+import Header from "./components/Header/header.components"
+import Container from "./components/Container/container.components"
 
 function App() {
   return (
     <>
-      <h1 className="">Hello World</h1>
+      <Header />
+      <Container />
+
     </>
   )
 }
