@@ -18,7 +18,7 @@ const Header = () => {
                 <img src={!toggle ? open : close} onClick={navHandle} alt="menu bar" />
             </div>
 
-            {toggle ? <nav className=" absolute left-2 px-[8.6rem] bg-white mt-11 rounded-md shadow-xl">
+            {toggle ? <nav className=" absolute left-0 right-0 mx-auto w-4/5 bg-white mt-11 rounded-md shadow-xl">
                 <ul className=" py-6 grid place-items-center gap-3">
                     <li className=" text-lg font-bold text-dark-blue"><a href="/#">Home</a></li>
                     <li className=" text-lg font-bold text-dark-blue"><a href="/#">About</a></li>
