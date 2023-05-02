@@ -4,6 +4,8 @@ import banking from "../../assets/images/icon-online.svg";
 import budgeting from "../../assets/images/icon-budgeting.svg";
 import onboarding from "../../assets/images/icon-onboarding.svg";
 import api from "../../assets/images/icon-api.svg";
+import Article from "../Article/article.components";
+import money from "../../assets/images/image-currency.jpg"
 
 const Container = () => {
   return (
@@ -60,6 +62,38 @@ const Container = () => {
           heading="Open API"
           para="Manage your savings, investments, pension, and much more from one account. Tracking 
   your money has never been easier."
+        />
+      </section>
+
+      <section className="w-full absolute top-[127rem] px-6 bg-very-light-gray">
+        <h2 className="max-w-sm mx-auto text-center text-4xl text-dark-blue py-6">Latest Articles</h2>
+        <Article 
+          img={money}
+          author="By Claire Robinson"
+          header="Receive money in any currency with no fees"
+          body="The world is getting smaller and we’re becoming more mobile. So why should you be 
+  forced to only receive money in a single …"
+        />
+        <Article 
+          img={money}
+          author="By Claire Robinson"
+          header="Receive money in any currency with no fees"
+          body="The world is getting smaller and we’re becoming more mobile. So why should you be 
+  forced to only receive money in a single …"
+        />
+        <Article 
+          img={money}
+          author="By Claire Robinson"
+          header="Receive money in any currency with no fees"
+          body="The world is getting smaller and we’re becoming more mobile. So why should you be 
+  forced to only receive money in a single …"
+        />
+        <Article 
+          img={money}
+          author="By Claire Robinson"
+          header="Receive money in any currency with no fees"
+          body="The world is getting smaller and we’re becoming more mobile. So why should you be 
+  forced to only receive money in a single …"
         />
       </section>
     </main>
