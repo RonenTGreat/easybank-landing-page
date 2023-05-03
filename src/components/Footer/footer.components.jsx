@@ -1,5 +1,3 @@
-import logo from "../../assets/images/logo.svg";
-
 const Footer = () => {
   return (
     <footer className=" grid place-items-center py-10 w-full absolute left-0 right-0 mx-auto top-[240rem] bg-dark-blue">

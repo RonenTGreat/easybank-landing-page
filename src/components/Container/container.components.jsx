@@ -5,10 +5,10 @@ import budgeting from "../../assets/images/icon-budgeting.svg";
 import onboarding from "../../assets/images/icon-onboarding.svg";
 import api from "../../assets/images/icon-api.svg";
 import Article from "../Article/article.components";
-import money from "../../assets/images/image-currency.jpg"
-import restaurant from "../../assets/images/image-restaurant.jpg"
-import plane from "../../assets/images/image-plane.jpg"
-import confetti from "../../assets/images/image-confetti.jpg"
+import money from "../../assets/images/image-currency.jpg";
+import restaurant from "../../assets/images/image-restaurant.jpg";
+import plane from "../../assets/images/image-plane.jpg";
+import confetti from "../../assets/images/image-confetti.jpg";
 
 const Container = () => {
   return (
@@ -42,6 +42,7 @@ const Container = () => {
           We leverage Open Banking to turn your bank account into your financial
           hub. Control your finances like never before.
         </p>
+        <div className="md:flex">
         <Feature
           img={banking}
           heading="Online Banking"
@@ -66,38 +67,43 @@ const Container = () => {
           para="Manage your savings, investments, pension, and much more from one account. Tracking 
   your money has never been easier."
         />
+        </div>
       </section>
 
       <section className="w-full absolute top-[127rem] px-6 bg-very-light-gray">
-        <h2 className="max-w-sm mx-auto text-center text-4xl text-dark-blue py-6">Latest Articles</h2>
-        <Article 
-          img={money}
-          author="By Claire Robinson"
-          header="Receive money in any currency with no fees"
-          body="The world is getting smaller and we’re becoming more mobile. So why should you be 
+        <h2 className="max-w-sm mx-auto text-center text-4xl text-dark-blue py-6 md:max-w-none md:text-left md:ml-4">
+          Latest Articles
+        </h2>
+        <div className=" md:flex">
+          <Article
+            img={money}
+            author="By Claire Robinson"
+            header="Receive money in any currency with no fees"
+            body="The world is getting smaller and we’re becoming more mobile. So why should you be 
   forced to only receive money in a single …"
-        />
-        <Article 
-          img={restaurant}
-          author="By Wilson Hutton"
-          header="Treat yourself without worrying about money"
-          body="Our simple budgeting feature allows you to separate out your spending and set 
+          />
+          <Article
+            img={restaurant}
+            author="By Wilson Hutton"
+            header="Treat yourself without worrying about money"
+            body="Our simple budgeting feature allows you to separate out your spending and set 
   realistic limits each month. That means you …"
-        />
-        <Article 
-          img={plane}
-          author="By Wilson Hutton"
-          header="Take your Easybank card wherever you go"
-          body="We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+          />
+          <Article
+            img={plane}
+            author="By Wilson Hutton"
+            header="Take your Easybank card wherever you go"
+            body="We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
   while you’re abroad. We’ll even show you …"
-        />
-        <Article 
-          img={confetti}
-          author="By Claire Robinson"
-          header="Our invite-only Beta accounts are now live!"
-          body="After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+          />
+          <Article
+            img={confetti}
+            author="By Claire Robinson"
+            header="Our invite-only Beta accounts are now live!"
+            body="After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
   It’s easy to request an invite through the site ..."
-        />
+          />
+        </div>
       </section>
     </main>
   );
