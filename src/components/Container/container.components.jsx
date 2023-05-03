@@ -6,6 +6,9 @@ import onboarding from "../../assets/images/icon-onboarding.svg";
 import api from "../../assets/images/icon-api.svg";
 import Article from "../Article/article.components";
 import money from "../../assets/images/image-currency.jpg"
+import restaurant from "../../assets/images/image-restaurant.jpg"
+import plane from "../../assets/images/image-plane.jpg"
+import confetti from "../../assets/images/image-confetti.jpg"
 
 const Container = () => {
   return (
@@ -75,25 +78,25 @@ const Container = () => {
   forced to only receive money in a single …"
         />
         <Article 
-          img={money}
-          author="By Claire Robinson"
-          header="Receive money in any currency with no fees"
-          body="The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …"
+          img={restaurant}
+          author="By Wilson Hutton"
+          header="Treat yourself without worrying about money"
+          body="Our simple budgeting feature allows you to separate out your spending and set 
+  realistic limits each month. That means you …"
         />
         <Article 
-          img={money}
-          author="By Claire Robinson"
-          header="Receive money in any currency with no fees"
-          body="The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …"
+          img={plane}
+          author="By Wilson Hutton"
+          header="Take your Easybank card wherever you go"
+          body="We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+  while you’re abroad. We’ll even show you …"
         />
         <Article 
-          img={money}
+          img={confetti}
           author="By Claire Robinson"
-          header="Receive money in any currency with no fees"
-          body="The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …"
+          header="Our invite-only Beta accounts are now live!"
+          body="After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+  It’s easy to request an invite through the site ..."
         />
       </section>
     </main>
