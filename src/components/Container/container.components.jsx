@@ -17,7 +17,7 @@ const Container = () => {
         <img className=" absolute -top-[6rem]" src={mockups} alt="mockups" />
       </div>
 
-      <section className=" w-full absolute top-[25rem] grid place-items-center mt-8 mb-9">
+      <section className=" w-full absolute top-[25rem] grid place-items-center mt-8 mb-9 md:static">
         <h1 className=" max-w-xs text-4xl text-dark-blue text-center mb-3">
           Next generation digital banking
         </h1>
@@ -34,47 +34,47 @@ const Container = () => {
         </a>
       </section>
 
-      <section className=" w-full absolute top-[46rem] bg-light-grayish-blue py-12">
-        <h2 className=" max-w-sm mx-auto text-center text-4xl text-dark-blue">
+      <section className=" w-full absolute top-[46rem] bg-light-grayish-blue py-12 md:static md:px-28">
+        <h2 className=" max-w-sm mx-auto text-center text-4xl text-dark-blue md:text-left md:max-w-none md:pt-10">
           Why choose Easybank?
         </h2>
-        <p className="text-center mx-auto max-w-[19rem] text-grayish-blue text-sm font-light mt-5 mb-12">
+        <p className="text-center mx-auto max-w-[19rem] text-grayish-blue text-sm font-light mt-5 mb-12 md:text-left md:max-w-lg md:mx-0">
           We leverage Open Banking to turn your bank account into your financial
           hub. Control your finances like never before.
         </p>
-        <div className="md:flex">
-        <Feature
-          img={banking}
-          heading="Online Banking"
-          para="Our modern web and mobile applications allow you to keep track of your finances 
+        <div className="md:flex gap-5">
+          <Feature
+            img={banking}
+            heading="Online Banking"
+            para="Our modern web and mobile applications allow you to keep track of your finances 
   wherever you are in the world."
-        />
-        <Feature
-          img={budgeting}
-          heading="Simple Budgeting"
-          para="See exactly where your money goes each month. Receive notifications when you’re 
+          />
+          <Feature
+            img={budgeting}
+            heading="Simple Budgeting"
+            para="See exactly where your money goes each month. Receive notifications when you’re 
   close to hitting your limits."
-        />
-        <Feature
-          img={onboarding}
-          heading="Fast Onboarding"
-          para="We don’t do branches. Open your account in minutes online and start taking control 
+          />
+          <Feature
+            img={onboarding}
+            heading="Fast Onboarding"
+            para="We don’t do branches. Open your account in minutes online and start taking control 
   of your finances right away."
-        />
-        <Feature
-          img={api}
-          heading="Open API"
-          para="Manage your savings, investments, pension, and much more from one account. Tracking 
+          />
+          <Feature
+            img={api}
+            heading="Open API"
+            para="Manage your savings, investments, pension, and much more from one account. Tracking 
   your money has never been easier."
-        />
+          />
         </div>
       </section>
 
-      <section className="w-full absolute top-[127rem] px-6 bg-very-light-gray">
-        <h2 className="max-w-sm mx-auto text-center text-4xl text-dark-blue py-6 md:max-w-none md:text-left md:ml-4">
+      <section className="w-full absolute top-[127rem] px-6 bg-very-light-gray md:static md:px-28">
+        <h2 className="max-w-sm mx-auto text-center text-4xl text-dark-blue py-6 md:max-w-none md:text-left md:pt-20">
           Latest Articles
         </h2>
-        <div className=" md:flex">
+        <div className=" md:flex md:gap-5">
           <Article
             img={money}
             author="By Claire Robinson"
