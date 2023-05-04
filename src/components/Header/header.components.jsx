@@ -25,19 +25,19 @@ const Header = () => {
 
       <nav className="hidden md:block">
         <ul className=" md:flex md:gap-5">
-          <li className=" text-normal font-normal md:text-grayish-blue md:hover:text-dark-blue md:hover:border-b-4 md:hover:border-b-lime-green">
+          <li className=" text-normal font-normal md:text-grayish-blue md:hover:text-dark-blue md:hover:border-hover">
             <a href="/#">Home</a>
           </li>
-          <li className=" text-normal font-normal md:text-grayish-blue md:hover:text-dark-blue md:hover:border-b-4 md:hover:border-b-lime-green">
+          <li className=" text-normal font-normal md:text-grayish-blue md:hover:text-dark-blue md:hover:border-hover">
             <a href="/#">About</a>
           </li>
-          <li className=" text-normal font-normal md:text-grayish-blue md:hover:text-dark-blue md:hover:border-b-4 md:hover:border-b-lime-green">
+          <li className=" text-normal font-normal md:text-grayish-blue md:hover:text-dark-blue md:hover:border-hover">
             <a href="/#">Contact</a>
           </li>
-          <li className=" text-normal font-normal md:text-grayish-blue md:hover:text-dark-blue md:hover:border-b-4 md:hover:border-b-lime-green">
+          <li className=" text-normal font-normal md:text-grayish-blue md:hover:text-dark-blue md:hover:border-hover">
             <a href="/#">Blog</a>
           </li>
-          <li className=" text-normal font-normal md:text-grayish-blue md:hover:text-dark-blue md:hover:border-b-4 md:hover:border-b-lime-green">
+          <li className=" text-normal font-normal md:text-grayish-blue md:hover:text-dark-blue md:hover:border-hover">
             <a href="/#">Careers</a>
           </li>
         </ul>
@@ -45,7 +45,7 @@ const Header = () => {
 
       <a
         href="/#"
-        className=" hidden md:block bg-gradient-to-r from-lime-green to-bright-cyan text-white py-3 px-7 rounded-full text-base font-bold"
+        className=" hidden md:block bg-gradient-to-r from-lime-green to-bright-cyan text-white py-3 px-7 rounded-full text-base font-bold md:hover:opacity-70"
       >
         Request Invite
       </a>

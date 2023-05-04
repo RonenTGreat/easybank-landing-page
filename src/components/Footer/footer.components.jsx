@@ -108,7 +108,7 @@ const Footer = () => {
       <div className="grid place-items-center md:grid md:place-items-end">
         <a
           href="/#"
-          className=" mt-7 bg-gradient-to-r from-lime-green to-bright-cyan text-white py-2 px-6 rounded-full text-base font-bold md:mt-0"
+          className=" mt-7 bg-gradient-to-r from-lime-green to-bright-cyan text-white py-2 px-6 rounded-full text-base font-bold md:mt-0 md:hover:opacity-70"
         >
           Request Invite
         </a>
