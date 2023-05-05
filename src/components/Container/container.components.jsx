@@ -16,7 +16,7 @@ const Container = () => {
       <div className="lg:flex lg:flex-row-reverse lg:pb-32 lg:bg-very-light-gray">
         <div className=" absolute top-8 -z-30 w-full h-[340px] bg-cover bg-no-repeat bg-[url('./assets/images/bg-intro-mobile.svg')] lg:hidden">
           <img
-            className=" absolute -top-[6rem] lg:relative"
+            className=" absolute -top-[6rem] md:w-[32rem] md:left-0 md:right-0 md:mx-auto md:-top-[9rem] lg:relative"
             src={mockups}
             alt="mockups"
           />
@@ -27,7 +27,7 @@ const Container = () => {
           <img className=" lg:absolute lg:w-[85%] lg:translate-x-[180px] lg:translate-y-[-14px]" src={mockups} alt="mockups" />
         </div>
 
-        <section className=" w-full absolute top-[25rem] grid place-items-center mt-8 mb-9 lg:static lg:place-items-start lg:mt-28 lg:gap-2">
+        <section className=" w-full absolute top-[25rem] grid place-items-center mt-8 mb-9 md:mt-20 lg:static lg:place-items-start lg:mt-28 lg:gap-2">
           <h1 className=" max-w-xs text-4xl text-dark-blue text-center mb-3 lg:max-w-sm lg:text-left lg:pl-[4.7rem]">
             Next generation digital banking
           </h1>
@@ -81,7 +81,7 @@ const Container = () => {
         </div>
       </section>
 
-      <section className="w-full absolute top-[127rem] px-6 bg-very-light-gray lg:static lg:px-28">
+      <section className="w-full absolute top-[130rem] px-6 bg-very-light-gray lg:static lg:px-28">
         <h2 className="max-w-sm mx-auto text-center text-4xl text-dark-blue py-6 lg:max-w-none lg:text-left lg:pt-20">
           Latest Articles
         </h2>
