@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className=" grid place-items-center py-10 w-full absolute left-0 right-0 mx-auto top-[240rem] bg-dark-blue md:static md:grid-cols-3">
+    <footer className=" grid place-items-center py-10 w-full absolute left-0 right-0 mx-auto top-[240rem] bg-dark-blue lg:static lg:grid-cols-3">
       <div className="">
         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
           <defs>
@@ -22,7 +22,7 @@ const Footer = () => {
             </g>
           </g>
         </svg>
-        <div className=" mt-5 flex justify-center gap-3 md:mt-12">
+        <div className=" mt-5 flex justify-center gap-3 lg:mt-12">
           <a href="/#">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <path
@@ -74,7 +74,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <ul className=" text-sm text-center text-light-grayish-blue font-light mt-5 md:flex md:text-left md:gap-28 md:mt-1">
+      <ul className=" text-sm text-center text-light-grayish-blue font-light mt-5 lg:flex lg:text-left lg:gap-28 lg:mt-1">
         <div>
           <li className=" mt-2 hover:text-lime-green">
             {" "}
@@ -105,10 +105,10 @@ const Footer = () => {
         </div>
       </ul>
 
-      <div className="grid place-items-center md:grid md:place-items-end">
+      <div className="grid place-items-center lg:grid lg:place-items-end">
         <a
           href="/#"
-          className=" mt-7 bg-gradient-to-r from-lime-green to-bright-cyan text-white py-2 px-6 rounded-full text-base font-bold md:mt-0 md:hover:opacity-70"
+          className=" mt-7 bg-gradient-to-r from-lime-green to-bright-cyan text-white py-2 px-6 rounded-full text-base font-bold lg:mt-0 lg:hover:opacity-70"
         >
           Request Invite
         </a>

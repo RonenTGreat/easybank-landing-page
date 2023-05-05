@@ -13,36 +13,47 @@ import confetti from "../../assets/images/image-confetti.jpg";
 const Container = () => {
   return (
     <main>
-      <div className=" absolute top-8 -z-30 w-full h-[340px] bg-cover bg-no-repeat bg-[url('./assets/images/bg-intro-mobile.svg')]">
-        <img className=" absolute -top-[6rem]" src={mockups} alt="mockups" />
+      <div className="lg:flex lg:flex-row-reverse lg:pb-32 lg:bg-very-light-gray">
+        <div className=" absolute top-8 -z-30 w-full h-[340px] bg-cover bg-no-repeat bg-[url('./assets/images/bg-intro-mobile.svg')] lg:hidden">
+          <img
+            className=" absolute -top-[6rem] lg:relative"
+            src={mockups}
+            alt="mockups"
+          />
+        </div>
+
+        <div className="hidden lg:relative lg:-top-20 lg:block lg:z-[100] lg:w-full lg:h-72">
+          <div className=" lg:absolute lg:top-[-3.5rem] left-8 lg:-z-[1] lg:w-[100%] lg:h-[37rem] lg:block lg:bg-[url('./assets/images/bg-intro-desktop.svg')] lg:bg-cover lg:bg-no-repeat"></div>
+          <img className=" lg:absolute lg:w-[85%] lg:translate-x-[180px] lg:translate-y-[-14px]" src={mockups} alt="mockups" />
+        </div>
+
+        <section className=" w-full absolute top-[25rem] grid place-items-center mt-8 mb-9 lg:static lg:place-items-start lg:mt-28 lg:gap-2">
+          <h1 className=" max-w-xs text-4xl text-dark-blue text-center mb-3 lg:max-w-sm lg:text-left lg:pl-[4.7rem]">
+            Next generation digital banking
+          </h1>
+          <p className=" max-w-[19rem] text-center text-grayish-blue text-sm font-light mb-10 lg:max-w-[27rem] lg:mb-2 lg:text-left lg:pl-[4.7rem]">
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <a
+            href="/#"
+            className=" bg-gradient-to-r from-lime-green to-bright-cyan text-white py-3 px-7 rounded-full text-base font-bold lg:hover:opacity-70 lg:ml-[4.7rem]"
+          >
+            Request Invite
+          </a>
+        </section>
       </div>
 
-      <section className=" w-full absolute top-[25rem] grid place-items-center mt-8 mb-9 md:static">
-        <h1 className=" max-w-xs text-4xl text-dark-blue text-center mb-3">
-          Next generation digital banking
-        </h1>
-        <p className=" max-w-[19rem] text-center text-grayish-blue text-sm font-light mb-10">
-          Take your financial life online. Your Easybank account will be a
-          one-stop-shop for spending, saving, budgeting, investing, and much
-          more.
-        </p>
-        <a
-          href="/#"
-          className=" bg-gradient-to-r from-lime-green to-bright-cyan text-white py-3 px-8 rounded-full text-xl font-bold"
-        >
-          Request Invite
-        </a>
-      </section>
-
-      <section className=" w-full absolute top-[46rem] bg-light-grayish-blue py-12 md:static md:px-28">
-        <h2 className=" max-w-sm mx-auto text-center text-4xl text-dark-blue md:text-left md:max-w-none md:pt-10">
+      <section className=" w-full absolute top-[46rem] bg-light-grayish-blue py-12 lg:static lg:px-28">
+        <h2 className=" max-w-sm mx-auto text-center text-4xl text-dark-blue lg:text-left lg:max-w-none lg:pt-10">
           Why choose Easybank?
         </h2>
-        <p className="text-center mx-auto max-w-[19rem] text-grayish-blue text-sm font-light mt-5 mb-12 md:text-left md:max-w-lg md:mx-0">
+        <p className="text-center mx-auto max-w-[19rem] text-grayish-blue text-sm font-light mt-5 mb-12 lg:text-left lg:max-w-lg lg:mx-0">
           We leverage Open Banking to turn your bank account into your financial
           hub. Control your finances like never before.
         </p>
-        <div className="md:flex gap-5">
+        <div className="lg:flex gap-5">
           <Feature
             img={banking}
             heading="Online Banking"
@@ -70,11 +81,11 @@ const Container = () => {
         </div>
       </section>
 
-      <section className="w-full absolute top-[127rem] px-6 bg-very-light-gray md:static md:px-28">
-        <h2 className="max-w-sm mx-auto text-center text-4xl text-dark-blue py-6 md:max-w-none md:text-left md:pt-20">
+      <section className="w-full absolute top-[127rem] px-6 bg-very-light-gray lg:static lg:px-28">
+        <h2 className="max-w-sm mx-auto text-center text-4xl text-dark-blue py-6 lg:max-w-none lg:text-left lg:pt-20">
           Latest Articles
         </h2>
-        <div className=" md:flex md:gap-5">
+        <div className=" lg:flex lg:gap-5">
           <Article
             img={money}
             author="By Claire Robinson"

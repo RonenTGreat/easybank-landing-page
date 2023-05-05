@@ -4,6 +4,7 @@
 
 :root {
   font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 @layer utilities {
