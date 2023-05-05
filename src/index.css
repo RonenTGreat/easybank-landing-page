@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+:root,
+body,
+html {
   font-family: "Public Sans", sans-serif;
   overflow-x: hidden;
 }
 
 @layer utilities {
-  .border-hover{
+  .border-hover {
     border-style: solid;
     border-width: 4px;
-    border-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%)) 0 0 1 0;
+    border-image: linear-gradient(
+        to right,
+        hsl(136, 65%, 51%),
+        hsl(192, 70%, 51%)
+      )
+      0 0 1 0;
     margin: -4px;
   }
-
 }
