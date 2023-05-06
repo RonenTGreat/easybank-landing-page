@@ -12,7 +12,7 @@ const Header = () => {
   }
 
   return (
-    <header className=" px-5 py-6 relative z-0 bg-white lg:px-20 lg:py-3 lg:flex lg:justify-between lg:items-center lg:relative lg:z-[1000]">
+    <header className=" px-5 py-6 bg-white lg:px-20 lg:py-3 lg:flex lg:justify-between lg:items-center lg:relative lg:z-[1000]">
       <div className=" flex justify-between">
         <img src={logo} alt="logo" />
         <img
